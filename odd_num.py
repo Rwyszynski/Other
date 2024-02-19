@@ -1,0 +1,14 @@
+def find_outlier(integers):
+    odd = []
+    even = []
+    for i in integers:
+        if i % 2 != 0:
+            odd.append(i)
+        else:
+            even.append(i)
+    if len(odd) > len (even):
+        return even[0]
+    else:
+        return odd[0]
+
+print(find_outlier([160, 3, 1719, 19, 11, 13, -21]))
